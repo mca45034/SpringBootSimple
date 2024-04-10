@@ -1,0 +1,8 @@
+package com.rays.common;
+
+public class SpringResponse {
+	private String message;
+	private String data;
+	private Map<String ,Object>result=new HashMap<String,Object>
+
+}

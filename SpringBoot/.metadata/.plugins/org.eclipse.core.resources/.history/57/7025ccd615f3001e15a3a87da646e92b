@@ -1,0 +1,12 @@
+package com.rays;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+public class SpringBootSimpleApplication {
+	@SpringBootApplication
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootSimpleApplication.class, args);
+
+	}
+
+}

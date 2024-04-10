@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\rays\Workspace\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\777271787.index
+\Spring_pro\src\main\resources
+C:\rays\Workspace\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1431377474.index
+\Spring-Boot\src\main\resources
+C:\rays\Workspace\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2848403737.index
+\Spring_Boots_practice\src\main\resources

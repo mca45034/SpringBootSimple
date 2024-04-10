@@ -1,0 +1,48 @@
+package com.rays.ctl;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.rays.common.ORSResponse;
+import com.rays.common.OrderDTO;
+
+@RestController
+@RequestMapping (value= "OrderCtl")
+public class OrderCtl {
+	
+	@GetMapping
+	public String display() {
+		return "i am order List....!!!!!!";
+	}
+	
+	@GetMapping("orderORSResponse")
+	public ORSResponse orderORSResponse() {
+		ORSResponse res=new ORSResponse();
+		Map e=new HashMap();
+		e.put("id", "id is required !!!!");
+		e.put("Shop Name", "Shop Name is required !!!!");
+		e.put("Mode", "Mode is required !!!!");
+		e.put("address", "address is required !!!!");
+		res.addInputError(e);
+		res.addMessage("INPUT MASSAGE IS VERY VERY REQUIRED..!!!!!!!!");
+		
+		OrderDTO dto=new OrderDTO();
+		dto.setId(1001);
+		dto.setsName("shrii");
+		dto.setType("online");
+		dto.setAddress("delhi");
+		res.addData(dto);
+		res.addResult("Order Mode", "order List");
+		
+		
+		
+		
+		return res;
+		
+	}
+
+}
